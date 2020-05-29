@@ -1,38 +1,86 @@
 {
-    "workbench.colorTheme": "Dracula At Night",
     "window.titleBarStyle": "custom",
-    "window.restoreWindows": "none",
-    "workbench.activityBar.visible": false,
-    "window.zoomLevel": 0,
-    "editor.minimap.enabled": false,
-    "[vue]": {
-        "editor.defaultFormatter": "octref.vetur"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.cursorBlinking": "solid",
-    "editor.lineNumbers": "relative",
-    "editor.fontFamily": "'Hack Nerd Font' , 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.semanticHighlighting.enabled": false,
-    "editor.fontSize": 15,
-    "breadcrumbs.enabled": false,
-    "editor.stablePeek": true,
+    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.iconTheme": "ayu",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "blade.format.enable": true,
+    "editor.tabSize": 2,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "editor.fontFamily": "Source Code Pro, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.minimap.enabled": false,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
     "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "k"],
-            "after": ["<esc>"]
-        },
-            {
-                "before": ["k", "j"],
-                "after": ["<esc>"]
-            }
-    ],
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
     },
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+        "before":["H"],
+        "after":["^"]
+    },
+    {
+        "before":["L"],
+        "after":["$"]
+    },
+    {
+        "before":["j"],
+        "after":["g", "j"]
+    },
+    {
+        "before":["k"],
+        "after":["g", "k"]
+    },
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+    },
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "p",
+            ],
+            "after": [
+                "p",
+                "g",
+                "v",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
 }
